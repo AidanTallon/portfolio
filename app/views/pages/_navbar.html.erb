@@ -1,7 +1,31 @@
-<nav id="navbar">
-  <%= link_to 'Home', action: 'show', page: 'home' %>
-  <%= link_to 'Developer', action: 'show', page: 'developer' %>
-  <%= link_to 'Tester', action: 'show', page: 'tester' %>
-  <%= link_to 'Musician', action: 'show', page: 'tester' %>
-  <%= link_to 'Contact', action: 'show', page: 'contact' %>
-</nav>
+<div class="container">
+  <nav id="navbar">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-2">
+        <%= link_to 'home' do %>
+          <button class="nav-button">Home</button>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= link_to 'developer' do %>
+          <button class="nav-button">Developer</button>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= link_to 'tester' do %>
+          <button class="nav-button">Tester</button>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= link_to 'musician' do %>
+          <button class="nav-button">Musician</button>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= link_to 'contact' do %>
+          <button class="nav-button">Contact</button>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+</div>

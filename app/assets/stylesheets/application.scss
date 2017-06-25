@@ -1,0 +1,9 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.nav-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
