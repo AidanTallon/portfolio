@@ -2,8 +2,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#page-header {
+  height: 100px;
+}
+
 .nav-button {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+#navbar {
+
+}
+
+#page-content {
+
+}
+
+.contact-img {
+  height: 80px;
+}
+
+#page-footer {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

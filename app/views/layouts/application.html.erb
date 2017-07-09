@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'header' %>
+    <%= render 'navbar' %>
+    <div id="page-content">
+      <%= yield %>
+    </div>
+    <%= render 'footer' %>
   </body>
 </html>
