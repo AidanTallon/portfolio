@@ -20,6 +20,29 @@
 
 }
 
+.panel-container  {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+}
+
+.panel-left-button {
+  display: block;
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  left: 0px;
+}
+
+.panel-right-button {
+  display: block;
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  right: 0px;
+}
+
 .contact-img {
   height: 80px;
 }
@@ -30,4 +53,16 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#dev-monzostreak {
+  display: block;
+}
+
+#dev-pokkenmatchuprecorder {
+  display: none;
+}
+
+#dev-portfolio {
+  display: none;
 }

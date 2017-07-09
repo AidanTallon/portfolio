@@ -16,3 +16,4 @@
 //= require jquery
 //= jquery_ujs
 //= require bootstrap-sprockets
+//= require developer

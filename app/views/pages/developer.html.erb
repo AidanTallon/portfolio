@@ -1,1 +1,10 @@
 <h1>Developer</h1>
+
+<% Dir['./app/views/dev_projects/*.html.erb'].each do |f| %>
+  <% filename = f.match(/.\/_(.+)\.html\.erb/).captures[0] %>
+  <div id="dev-<%= filename %>">
+    <%= render 'panel' do render 'dev_projects/' + filename end %>
+  </div>
+<% end %>
+
+<%= javascript_include_tag "developer.js" %>
