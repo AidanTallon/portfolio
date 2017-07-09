@@ -1,9 +1,24 @@
 <h1>Developer</h1>
 
-<% Dir['./app/views/dev_projects/*.html.erb'].each do |f| %>
-  <% filename = f.match(/.\/_(.+)\.html\.erb/).captures[0] %>
-  <div id="dev-<%= filename %>">
-    <%= render 'panel' do render 'dev_projects/' + filename end %>
+<%
+# projects = Dir['./app/views/dev_projects/*.html.erb'].map { |p| p.match(/.\/_(.+)\.html\.erb/).captures[0] }
+# needs to be in order
+projects = ['monzo_streak', 'pokken_matchup_recorder', 'portfolio']
+%>
+
+<div class="panel-nav">
+  <p id="current-proj-label">Monzo Streak</p>
+  <div>
+    <% projects.each do |p| %>
+      <button class="dev-navbtn" id="<%= 'dev-navbtn' + p %>" onclick="changeToPanel('<%= p %>')">
+      </button>
+    <% end %>
+  </div>
+</div>
+
+<% projects.each do |p| %>
+  <div id="<%='dev-' + p %>">
+    <%= render 'panel' do render 'dev_projects/' + p end %>
   </div>
 <% end %>
 

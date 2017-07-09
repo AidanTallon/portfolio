@@ -20,6 +20,19 @@
 
 }
 
+.panel-nav {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.dev-navbtn {
+  border-radius: 100%;
+  border-style: none;
+  height: 10px;
+  width: 10px;
+}
+
 .panel-container  {
   height: 60%;
   width: 60%;
@@ -55,11 +68,11 @@
   left: 0;
 }
 
-#dev-monzostreak {
+#dev-monzo_streak {
   display: block;
 }
 
-#dev-pokkenmatchuprecorder {
+#dev-pokken_matchup_recorder {
   display: none;
 }
 
