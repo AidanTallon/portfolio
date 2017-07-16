@@ -33,6 +33,13 @@
   width: 10px;
 }
 
+.test-navbtn {
+  border-radius: 100%;
+  border-style: none;
+  height: 10px;
+  width: 10px;
+}
+
 .panel-container  {
   height: 60%;
   width: 60%;
@@ -77,5 +84,17 @@
 }
 
 #dev-portfolio {
+  display: none;
+}
+
+#test-cucumber_with {
+  display: block;
+}
+
+#test-pokken_matchup_recorder_acceptance_testing {
+  display: none;
+}
+
+#test-portfolio_ui_test {
   display: none;
 }

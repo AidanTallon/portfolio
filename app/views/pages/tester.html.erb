@@ -1,1 +1,23 @@
 <h1>Tester</h1>
+
+<%
+  projects = ['cucumber_with', 'pokken_matchup_recorder_acceptance_testing', 'portfolio_ui_test']
+%>
+
+<div class="panel-nav">
+  <p id="current-proj-label">Cucumber-With</p>
+  <div>
+    <% projects.each do |p| %>
+      <button class="test-navbtn" id="<%= 'test-navbtn' + p %>" onclick="changeToPanel('<%= p %>')">
+      </button>
+    <% end %>
+  </div>
+</div>
+
+<% projects.each do |p| %>
+  <div id="<%= 'test-' + p %>">
+    <%= render 'panel' do render 'test_projects/' + p end %>
+  </div>
+<% end %>
+
+<%= javascript_include_tag 'tester.js' %>
